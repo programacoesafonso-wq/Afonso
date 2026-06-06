@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Estilo</title>
+
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(250, 251, 253);
+        color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        }
+
+        /* Cabeçalho*/
+        nav {
+            background: #020000;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* titulo do site*/
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(3, 1, 1);
+             background-color: rgb(0, 1, 3);
+            text-shadow: 0 0 10px rgb(248, 245, 245);
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 10px;
+            animation: fadeIn 2s ease forwards;
+        }
+        /* muda tudo dos butoes amarelos*/
+        .btn-hero {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: rgb(3, 0, 0);
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: fadeIn 2.5s ease forwards;
+        }
+
+        .btn-hero:hover {
+            background: rgb(0, 7, 15);
+            transform: scale(1.05);
+        }
+
+        /* SECÇÃO SOBRE */
+        .sobre {
+            
+        padding: 50px;
+        text-align: center;
+        /*muda a cor do sobre*/
+        background-color: rgb(255, 255, 255);
+        color: rgba(0, 0, 0, 0.979);
+        animation: fadeIn 1.5s ease forwards;
+
+        }
+
+        .sobre h2 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .sobre p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* ANIMAÇÕES */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="Fotos.html">Fotos</a>
+</nav>
+
+<section class="hero">
+    <h1>Barbearia Estilo</h1>
+    <p>Tradição, qualidade e estilo para o teu visual</p>
+    <button class="btn-hero" onclick="window.location.href='sobre.html'">Ver Sobre</button>
+    <button class="btn-hero" onclick="window.location.href='servicos.html'">Ver Serviços</button>
+    <button class="btn-hero" onclick="window.location.href='Fotos.html'">Ver Fotos</button>
+
+</section>
+
+<section class="sobre">
+    <h2>Bem-vindo à nossa Barbearia</h2>
+    <p>
+        Aqui combinamos técnicas modernas com a tradição dos barbeiros clássicos.
+        O nosso objetivo é proporcionar uma experiência única, com conforto, estilo
+        e atendimento profissional.
+    </p>
+</section>
+
+</body>
+</html>

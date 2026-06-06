@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Serviços da Barbearia</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            overflow-x: hidden;
+        }
+
+        /* MENU */
+        nav {
+            background: #222;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* TÍTULOS */
+        h1, h2 {
+            text-align: center;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* CONTAINER */
+        .servicos-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* GRID */
+        .servicos-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        /* CARTÕES */
+        .card-servico {
+            background: white;
+            padding: 20px;
+            width: 260px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.4s;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        .card-servico:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+
+        .preco {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* BOTÃO */
+        .btn-agendar {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #111;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-agendar:hover {
+            background: #ffcc00;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        /* ANIMAÇÕES */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="Fotos.html">Fotos</a>
+</nav>
+
+<section class="servicos-container">
+    <h2>Os nossos Serviços</h2>
+
+    <div class="servicos-grid">
+
+        <div class="card-servico">
+            <h3>Corte Masculino</h3>
+            <span class="preco">10€</span>
+            <p>Corte clássico ou moderno, adaptado ao teu estilo.</p>
+        </div>
+
+        <div class="card-servico">
+            <h3>Barba</h3>
+            <span class="preco">7€</span>
+            <p>Cuidado completo com toalha quente e alinhamento.</p>
+        </div>
+
+        <div class="card-servico">
+            <h3>Corte + Barba</h3>
+            <span class="preco">15€</span>
+            <p>O combo perfeito para renovar o visual por completo.</p>
+        </div>
+
+        <div class="card-servico">
+            <h3>Sobrancelha</h3>
+            <span class="preco">5€</span>
+            <p>Design e limpeza detalhada da sobrancelha.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

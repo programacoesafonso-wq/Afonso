@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>A nossa Barbearia</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            overflow-x: hidden;
+        }
+
+        /* MENU */
+        nav {
+            background: #222;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* TÍTULO */
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* TEXTO SOBRE */
+        .sobre-texto {
+            max-width: 800px;
+            margin: 30px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            animation: slideUp 1.2s ease forwards;
+        }
+
+        /* CONTACTOS */
+        .contactos {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .contactos h2 {
+            margin-bottom: 10px;
+        }
+
+        .contactos p {
+            font-size: 18px;
+        }
+
+        /* MAPA */
+        .mapa {
+            text-align: center;
+            margin-top: 40px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        /* ANIMAÇÕES */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="Fotos.html">Fotos</a>
+</nav>
+
+<h1>Sobre a Barbearia</h1>
+
+<div class="sobre-texto">
+    <p>
+        Bem-vindo à sua nova barbearia de confiança.  
+        Mais do que um simples corte de cabelo, oferecemos uma experiência completa de estilo, cuidado e bem‑estar.  
+        Combinamos técnicas tradicionais com as tendências mais modernas para garantir um visual impecável e personalizado.
+    </p>
+
+    <p>
+        ✂️ Cortes modernos e clássicos  
+        🧔 Aparo e modelação de barba  
+        💈 Ambiente acolhedor e profissional  
+        ⭐ Atendimento de excelência  
+    </p>
+
+    <p>
+        Cada detalhe faz a diferença. Dedicamos tempo a compreender o seu estilo e a realçar a sua melhor versão.  
+        Seja para um corte rápido, uma transformação completa ou um cuidado especial com a barba, estamos prontos para recebê-lo.
+    </p>
+
+    <p>
+        O seu estilo começa aqui. 💈✨
+    </p>
+</div>
+
+<div class="contactos">
+    <h2>Contactos</h2>
+    <p>📞 Telefone: 912 345 678</p>
+    <p>📱 WhatsApp: 912 345 678</p>
+    <p>📧 Email: barbeariaestilo@email.com</p>
+</div>
+
+<div class="mapa">
+    <h2>Localização</h2>
+    <p>📍 Rua Central, 45 — Bairro Comercial, Lisboa</p>
+
+    <!-- MAPA FICTÍCIO (não é a tua localização real) -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.000000!2d-9.150!3d38.720!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQzJzEyLjAiTiA5wrAwOScwMC4wIlc!5e0!3m2!1spt-PT!2spt!4v0000000000"
+        width="350" height="300" allowfullscreen="" loading="lazy">
+    </iframe>
+</div>
+
+</body>
+</html>
